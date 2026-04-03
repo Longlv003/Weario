@@ -117,3 +117,30 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# IDE / editor configs
+.vscode/
+.idea/
+*.iml
+
+# iOS additional temp / workspace files
+**/ios/*.xcworkspace
+**/ios/*.xcuserstate
+
+# Optional Android temp/logs
+**/android/.gradle/
+**/android/build/
+
+# fe
+/fe/.env
+
+# be
+
+/be/.env
+/be/node_modules
+
+
+# firebase
+/fe/lib/firebase_options.dart
+/fe/android/app/google-services.json
+/be/configs/weario-app-firebase-adminsdk-fbsvc-5da1a8cbe6.json
