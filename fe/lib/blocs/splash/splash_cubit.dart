@@ -10,7 +10,7 @@ class SplashCubit extends Cubit<SplashState> {
 
     await Future.delayed(const Duration(seconds: 2));
 
-    // emit(SplashGoToLogin());
+    emit(SplashGoToLogin());
 
     try {
       final User? currentUser = FirebaseAuth.instance.currentUser;

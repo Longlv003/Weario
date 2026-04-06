@@ -1,6 +1,6 @@
 import 'package:weario/blocs/auth/auth_helper.dart';
 import 'package:weario/blocs/auth/register/register_state.dart';
-import 'package:weario/models/account_model.dart';
+import 'package:weario/models/account/account_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weario/services/auth/auth_api.dart';

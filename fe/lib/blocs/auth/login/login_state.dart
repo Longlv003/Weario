@@ -1,4 +1,4 @@
-import 'package:weario/models/account_model.dart';
+import 'package:weario/models/account/account_model.dart';
 
 abstract class LoginState {}
 

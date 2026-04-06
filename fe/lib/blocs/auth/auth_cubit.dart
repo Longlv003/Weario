@@ -1,5 +1,5 @@
 import 'package:weario/blocs/auth/auth_helper.dart';
-import 'package:weario/models/account_model.dart';
+import 'package:weario/models/account/account_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
@@ -66,7 +66,7 @@ class AuthCubit extends Cubit<AuthState> {
             firebaseUid: user.uid,
             fullName: googleUser.displayName ?? '',
             email: googleUser.email,
-            provider: 'google',
+            provider: 'google.com',
             avatarUrl: googleUser.photoUrl ?? '',
             // role tự default là 'user'
           ),
@@ -154,7 +154,7 @@ class AuthCubit extends Cubit<AuthState> {
             firebaseUid: user.uid,
             fullName: userData['name'] ?? user.displayName ?? '',
             email: userData['email'] ?? user.email ?? '',
-            provider: 'facebook',
+            provider: 'facebook.com',
             avatarUrl:
                 userData['picture']?['data']?['url'] ?? user.photoURL ?? '',
             // role tự default là 'user'

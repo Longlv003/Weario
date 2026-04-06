@@ -1,5 +1,5 @@
 import 'package:logger/web.dart';
-import 'package:weario/models/account_model.dart';
+import 'package:weario/models/account/account_model.dart';
 import 'package:weario/services/api_service.dart';
 
 var logger = Logger();

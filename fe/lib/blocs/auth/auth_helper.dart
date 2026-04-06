@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:weario/models/account_model.dart';
+import 'package:weario/models/account/account_model.dart';
 
 class AuthHelper {
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
